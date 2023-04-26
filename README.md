@@ -8,7 +8,7 @@ script (Script).
 local Desync = require(game:GetService("ReplicatedStorage").Desync)
 
 local data = Desync(script.SumOf2Nums)(5,5)
-print(data) -- 10
+print(data) -- PRINTS: 10
 ```
 
 script.SumOf2Nums (ModuleScript).
