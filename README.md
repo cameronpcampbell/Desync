@@ -7,11 +7,11 @@ script (Script).
 ```lua
 local Desync = require(game:GetService("ReplicatedStorage").Desync)
 
-local data = Desync(script.Example)(5,5)
+local data = Desync(script.SumOf2Nums)(5,5)
 print(data) -- 10
 ```
 
-script.Example (ModuleScript).
+script.SumOf2Nums (ModuleScript).
 ```lua
 return function(number1, number2)
     return number1 + number2
