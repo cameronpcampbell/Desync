@@ -5,5 +5,5 @@ RunEvent.Event:ConnectParallel(function(module, ...)
 	local reqModule = require(module)
 	task.desynchronize()
 
-	ReturnEvent:Fire(reqModule(ReturnEvent, ...))
+	ReturnEvent:Fire(reqModule(...))
 end)
