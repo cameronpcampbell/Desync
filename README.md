@@ -15,8 +15,8 @@ print(data) -- PRINTS: 10
 
 script.SumOf2Nums (ModuleScript).
 ```lua
-return function(returnEvent, num1, num2)
-    returnEvent:Fire(num1 + num2)
+return function(num1, num2)
+    return num1 + num2
 end
 ```
 
