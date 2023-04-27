@@ -23,6 +23,6 @@ end
 - - - 
 
 # Changing the amount of initial actors
-Behind the scenes Desync using a pool of `Actors`. When you run a ModuleScript through Desync it picks a random Actor to run from. The default amount of Actors that are initially created is 50, however if a ModuleScript is ran through Desync and no Actor is availible then a new Actor will be created.
+Behind the scenes Desync using a pool of `Actors`. When you run a ModuleScript through Desync it picks a random Actor to run from. The default amount of Actors that are initially created is 50, however if a ModuleScript is ran through Desync and no Actor is available then a new Actor will be created.
 
 To change the amount of Actors that are initially created then add a number Attribute called `InitialActors` to the Desync ModuleScript and set it accordingly.
