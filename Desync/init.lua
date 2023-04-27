@@ -12,7 +12,10 @@ local ReturnEvent = Instance.new("BindableEvent"); ReturnEvent.Name = "ReturnEve
 DesyncWork.ActorScript.Parent = BaseActor
 DesyncWork.Parent = workspace
 
-local Pool = ActorPool.new(BaseActor, ActorsFolder, 50)
+local actorAmount = script:GetAttribute("InitialActors") or 25
+assert(type(actorAmount) == "number", "The value of \"InitialActors\" must be of type \"number\"!")
+
+local Pool = ActorPool.new(BaseActor, ActorsFolder, actorAmount)
 
 return function(module)
 	return function(...)
