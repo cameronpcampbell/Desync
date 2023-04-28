@@ -1,7 +1,6 @@
 local RunEvent, ReturnEvent = script.Parent.RunEvent, script.Parent.ReturnEvent
 
-RunEvent.Event:ConnectParallel(function(module, ...)
-	task.synchronize()
+RunEvent.Event:Connect(function(module, ...)
 	local reqModule = require(module)
 	task.desynchronize()
 
